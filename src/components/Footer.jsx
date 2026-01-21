@@ -16,7 +16,7 @@ const serviceHours = [
 const contactInfo = [
     {icon: <FaPhone className="mr-4 text-white/70"/>,
     text: <a href="#" className="hover:text-sky-300 transition-colors">
-        +1 (254) 796-578 / +1 (254) 798-572-580
+        (+254) 796-578-077 / (+254) 798-572-580
         </a>
     },
     {icon: <MdOutlineEmail className="mr-4 text-white/70"/>,
