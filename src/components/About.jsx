@@ -1,5 +1,6 @@
 import { FaUserMd } from 'react-icons/fa'
 import about from '../assets/about.png'
+import { FaAudible } from 'react-icons/fa6'
 
 
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
             </div>
             <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
                 <div className='flex items-center justify-center lg:justify-start space-x-2'>
-                    <FaUserMd className='w-7 h-7 text-sky-600'/>
+                    <FaAudible className='w-7 h-7 text-sky-600'/>
                     <h2 className="text-3xl font-bold text-sky-900">About HomeGlow Services</h2>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
