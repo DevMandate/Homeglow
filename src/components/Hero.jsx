@@ -7,10 +7,10 @@ const Hero = () => {
         <div className='container mx-auto px-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-10'>
             <div className='max-w-xl text-center lg:text-left space-y-6'>
                 <h1 className='text-xl sm:text-4xl lg:text-5xl font-bold text-sky-900 leading-tight'>
-                    Brighten Your Home <br /> with Expert Cleaning Services
+                Bringing the Glow Back Home <br /> with Expert Cleaning Services
                 </h1>
                 <p className='text-gray-700 text-sm lg:text-lg'>
-                    Experience the joy of a spotless home with HomeGlow Services. Our professional cleaning team is dedicated to making your living space shine, so you can relax and enjoy a healthier environment.
+                Experience a spotless home with HomeGlow's professional cleaning services. Our expert team is dedicated to delivering exceptional results, ensuring your living space is fresh, clean, and inviting. Book your appointment today and let us bring the glow back to your home!
                 </p>
                 <a href="#book" className="inline-flex items-center bg-sky-600 text-white px-3 py-1 sm:px-6 sm:py-3 rounded-xl hover:bg-sky-700 transition text-base font-medium">
 
