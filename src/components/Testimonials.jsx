@@ -74,7 +74,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className='md:w-2/3 md:pl-12'>
                                     <div className='relative'>
-                                        <FaQuoteLeft className='text-sky-200 text-4xl absolute -top-2 -left-10'/>
+                                        <FaQuoteLeft className='text-sky-300 text-2xl md:text-3xl absolute -top-2 -left:-7 md:-left-10'/>
                                         <p className='text-lg text-gray-700 mb-6 relative z-10'>
                                             {testimonial.feedback}
                                         </p>                                        
@@ -96,11 +96,11 @@ const Testimonials = () => {
                                         <div className='hidden md:flex space-x-2'>
                                             <button
                                                 onClick={prevTestimonial}
-                                                className='p-2 rounded-full bg-sky-100 text-sky-100 hover:bg-sky-200 transition-colors'>
+                                                className='p-2 rounded-full bg-sky-100 text-sky-600 hover:bg-sky-200 transition-colors'>
                                                     <FaChevronLeft />
                                             </button>
                                             <button onClick={nextTestimonial}
-                                            className='p-2 rounded-full bg-sky-100 text-sky-100 hover:bg-sky-200 transition-colors'>
+                                            className='p-2 rounded-full bg-sky-100 text-sky-600 hover:bg-sky-200 transition-colors'>
                                                 <FaChevronRight />
                                             </button>
                                         </div>

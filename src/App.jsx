@@ -5,6 +5,7 @@ import About from './components/About'
 import Tips from './components/Tips'
 import BookAppointment from './components/BookAppointment'
 import Testimonials from './components/Testimonials.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Tips />
       <BookAppointment />
       <Testimonials />
+      <Footer />
     </div>
   )
 }
