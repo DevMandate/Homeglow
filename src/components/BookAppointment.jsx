@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaChevronRight,   } from "react-icons/fa";
+import { FaChevronRight, FaUser, FaPhone, FaClock, FaCalendar, FaTools, FaCheck } from "react-icons/fa";
 
 const BookAppointment = () => {
     const [activeStep, setActiveStep] = useState(0);
