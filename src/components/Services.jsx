@@ -2,53 +2,55 @@ import {
     FaCouch,
     FaBed,
     FaRug,
-    FaHome,
+    FaHouse,
     FaSprayCanSparkles,
-    FaHardHat,
+    FaHelmetSafety,
     FaBug
   } from "react-icons/fa6";
+import { motion } from "framer-motion";
+  
   
 
 
 const services = [
     {
-      icon: <FaCouch className="w-10 h-10 text-sky-600" />,
+      icon: <FaCouch className="w-10 h-10 text-sky-500" />,
       title: "Sofa & Bed Cleaning",
       description:
         "Professional cleaning of sofas and beds to remove stains, dust, and odors, restoring freshness and comfort."
     },
     {
-      icon: <FaBed className="w-10 h-10 text-sky-600" />,
+      icon: <FaBed className="w-10 h-10 text-green-500" />,
       title: "Mattress Cleaning",
       description:
         "Deep mattress cleaning that eliminates allergens, bacteria, and dirt for a healthier sleeping environment."
     },
     {
-      icon: <FaRug className="w-10 h-10 text-sky-600" />,
+      icon: <FaRug className="w-10 h-10 text-purple-500" />,
       title: "Carpet Cleaning",
       description:
         "Expert carpet and rug cleaning services that lift stubborn stains and improve indoor air quality."
     },
     {
-      icon: <FaHome className="w-10 h-10 text-sky-600" />,
+      icon: <FaHouse className="w-10 h-10 text-pink-500" />,
       title: "General House Cleaning",
       description:
         "Routine home cleaning covering floors, surfaces, kitchens, and bathrooms to keep your home neat and tidy."
     },
     {
-      icon: <FaSprayCanSparkles className="w-10 h-10 text-sky-600" />,
+      icon: <FaSprayCanSparkles className="w-10 h-10 text-yellow-500" />,
       title: "Deep Home Cleaning",
       description:
         "Intensive deep cleaning service targeting hard-to-reach areas for a truly spotless and hygienic home."
     },
     {
-      icon: <FaHardHat className="w-10 h-10 text-sky-600" />,
+      icon: <FaHelmetSafety className="w-10 h-10 text-red-500" />,
       title: "Post-Construction Cleaning",
       description:
         "Thorough cleaning after renovations or construction, removing dust, debris, and paint residue."
     },
     {
-      icon: <FaBug className="w-10 h-10 text-sky-600" />,
+      icon: <FaBug className="w-10 h-10 text-orange-500" />,
       title: "Fumigation & Pest Control",
       description:
         "Safe and effective fumigation services to eliminate pests and protect your home from infestations."
