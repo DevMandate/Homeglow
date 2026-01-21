@@ -20,15 +20,15 @@ const Hero = () => {
             </div>
 
             <div className='flex justify-center items-stretch'>
-    <video 
-        src={heroVideo} 
-        className='w-80 lg:w-[429px] h-64 lg:h-[400px] object-cover rounded-4xl' 
-        controls 
-        autoPlay 
-        loop 
-        muted
-    />
-</div>
+                <video 
+                    src={heroVideo} 
+                    className='w-80 lg:w-[429px] h-64 lg:h-[400px] object-cover rounded-4xl' 
+                    controls 
+                    autoPlay 
+                    loop 
+                    muted
+                />
+            </div>
 
 
         </div>
