@@ -1,5 +1,5 @@
 import { CalendarCheck } from 'lucide-react'
-import hero from '../assets/hero.png'
+import heroVideo from '../assets/hero.mp4'
 
 const Hero = () => {
   return (
@@ -19,9 +19,18 @@ const Hero = () => {
                 </a>
             </div>
 
-            <div className='flex justify-center'>
-                <img src={hero} alt="Home Cleaning Service" className='w-80 lg:w-[429px] rounded-4xl'/>
-            </div>
+            <div className='flex justify-center items-stretch'>
+    <video 
+        src={heroVideo} 
+        className='w-80 lg:w-[429px] h-64 lg:h-[400px] object-cover rounded-4xl' 
+        controls 
+        autoPlay 
+        loop 
+        muted
+    />
+</div>
+
+
         </div>
     </section>
   );

@@ -6,28 +6,28 @@ const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            name: 'John Doe',
+            name: 'Ephantus Kung`u',
             feedback: 'Great service! Highly recommend HomeGlow for all your home maintenance needs.',
             rating: 5,
             image: 'https://randomuser.me/api/portraits/men/1.jpg',
         },
         {
             id: 2,
-            name: 'Jane Smith',
+            name: 'Jane Mwende',
             feedback: 'Professional and reliable. My go-to for any home repairs.',
             rating: 4,
             image: 'https://randomuser.me/api/portraits/women/2.jpg',
         },
         {
             id: 3,
-            name: 'Mike Johnson',
+            name: 'Melissa Johnson',
             feedback: 'Affordable prices and excellent customer service.',
             rating: 5,
             image: 'https://randomuser.me/api/portraits/men/3.jpg',
         },
         {            
             id: 4,
-            name: 'Emily Davis',
+            name: 'Maxwell Njeru',
             feedback: 'Quick response time and quality work. Very satisfied!',
             rating: 4,
             image: 'https://randomuser.me/api/portraits/women/4.jpg',
@@ -62,51 +62,50 @@ const Testimonials = () => {
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {testimonials.map((testimonial, index) => (
                         <div key={testimonial.id} className='w-full flex-shrink-0 px-4'>
-                            <div className='bg-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center'>
-                                <div className='md:w-1/3 mb-8 md:mb-0 flex justify-center'>
-                                    <div className='relative'>
-                                        <img
-                                            src={testimonial.image}
-                                            alt={testimonial.name}
-                                            className='w-40 h-40 rounded-full object-cover border-4 border-sky-100 shadow-lg'
-                                        />
-                                    </div>
+                            <div className='bg-white rounded-3xl shadow-lg sm:shadow-xl flex flex-col md:flex-row items-center p-6 md:p-10 gap-6 md:gap-12'>
+                            <div className='md:w-1/3 mb-6 md:mb-0 flex justify-center'>
+                                <img
+                                    src={testimonial.image}
+                                    alt={testimonial.name}
+                                    className='w-32 sm:w-36 md:w-40 h-32 sm:h-36 md:h-40 rounded-full object-cover border-4 border-sky-100 shadow-lg'
+                                />
+                            </div>
+                            <div className='md:w-2/3 md:pl-6'>
+                                <div className='relative'>
+                                <FaQuoteLeft 
+                                    className='text-sky-300 text-2xl sm:text-3xl absolute -top-3 sm:-top-2 -left-3 sm:-left-10'
+                                    />
+
+                                    <p className='text-base sm:text-lg text-gray-700 mb-6 relative z-10 leading-relaxed'>
+                                        {testimonial.feedback}
+                                    </p>
                                 </div>
-                                <div className='md:w-2/3 md:pl-12'>
-                                    <div className='relative'>
-                                        <FaQuoteLeft className='text-sky-300 text-2xl md:text-3xl absolute -top-2 -left:-7 md:-left-10'/>
-                                        <p className='text-lg text-gray-700 mb-6 relative z-10'>
-                                            {testimonial.feedback}
-                                        </p>                                        
+                                <div className='flex items-center justify-between'>
+                                    <div>
+                                        <h3 className='text-lg sm:text-xl font-bold text-sky-800'>
+                                            {testimonial.name}
+                                        </h3>
+                                        <div className='flex mt-1'>
+                                            {[...Array(5)].map((_, i) => (
+                                                <FaStar 
+                                                key={i}
+                                                className={`text-sm sm:text-lg ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                                                />
+                                            ))}
+                                        </div>
                                     </div>
-                                    <div className='flex items-center justify-between'>
-                                        <div>
-                                            <h3 className='text-xl font-bold text-sky-800'>
-                                                {testimonial.name}
-                                            </h3>
-                                            <div className='flex mt-1'>
-                                                {[...Array(5)].map((_, i) => (
-                                                    <FaStar 
-                                                    key={i}
-                                                    className={`text-lg ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                                                    />
-                                                ))}
-                                            </div>
-                                        </div>
-                                        <div className='hidden md:flex space-x-2'>
-                                            <button
-                                                onClick={prevTestimonial}
-                                                className='p-2 rounded-full bg-sky-100 text-sky-600 hover:bg-sky-200 transition-colors'>
-                                                    <FaChevronLeft />
-                                            </button>
-                                            <button onClick={nextTestimonial}
-                                            className='p-2 rounded-full bg-sky-100 text-sky-600 hover:bg-sky-200 transition-colors'>
-                                                <FaChevronRight />
-                                            </button>
-                                        </div>
+                                    <div className='hidden md:flex space-x-2'>
+                                        <button onClick={prevTestimonial} className='p-2 rounded-full bg-sky-100 text-sky-600 hover:bg-sky-200 transition-colors'>
+                                            <FaChevronLeft />
+                                        </button>
+                                        <button onClick={nextTestimonial} className='p-2 rounded-full bg-sky-100 text-sky-600 hover:bg-sky-200 transition-colors'>
+                                            <FaChevronRight />
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
                         </div>
                     ))}
                 </div>
