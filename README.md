@@ -1,16 +1,100 @@
-# React + Vite
+# HomeGlow Cleaning Services System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![HomeGlow Logo](./assets/logo.png)
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation & Setup](#installation--setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**HomeGlow** is a full-featured cleaning services platform designed to help customers book professional cleaning services, view services, watch transformations, and contact the HomeGlow team easily.
 
-## Expanding the ESLint configuration
+The system includes both a **responsive website** and a **backend** for managing bookings, testimonials, and services.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+HomeGlow makes home and office cleaning services accessible, reliable, and visually appealing. The website showcases services like mattress cleaning, home sanitization, dust removal, and more, with interactive visuals, videos, and client testimonials.
+
+---
+
+## Features
+
+- Hero Section with Video Overlay
+- About Section showcasing HomeGlow story and mission
+- Services Section with icons and descriptions
+- Transformations Gallery for before-and-after showcases
+- Testimonials carousel for customer feedback
+- Booking & Contact Form
+- Responsive Design for all devices
+- Interactive Icons using React Icons
+- SEO Optimized
+- Video Integration (autoplay, loop, muted)
+
+---
+
+## Technologies Used
+
+- **Frontend:** React, Tailwind CSS, Vite
+- **Icons & Graphics:** React Icons, SVGs, Videos
+- **Backend (optional):** Node.js, Express
+- **Database (optional):** MongoDB or Firebase
+- **Deployment:** Vercel (frontend), optional backend on Render/Heroku
+- **Other Tools:** Git, npm, ESLint, Prettier
+
+---
+
+## Project Structure
+```
+homeglow-website/
+│
+├── public/ # Static assets (images, videos, favicon)
+├── src/
+│ ├── assets/ # Images, videos, logos
+│ ├── components/ # Reusable React components
+│ │ ├── Hero.jsx
+│ │ ├── About.jsx
+│ │ ├── Services.jsx
+│ │ ├── Testimonials.jsx
+│ │ ├── Footer.jsx
+│ │ └── ContactForm.jsx
+│ ├── pages/ # Page components if routing used
+│ ├── App.jsx # Main app entry
+│ ├── main.jsx # React DOM rendering
+│ └── styles/ # Tailwind / custom CSS
+├── package.json # Project dependencies
+├── tailwind.config.js # Tailwind setup
+├── vite.config.js # Vite config
+└── README.md # Project documentation
+```
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+
+- Node.js >= 18
+- npm >= 9
+
+### Contact
+
+- HomeGlow Team
+- Email: serviceshomeglow@gmail.com
+- WhatsApp: +254 796 578 077
+- Instagram: @homeglow
+- Website: https://homeglowservices.vercel.app/
+
+---
+
+## Credits
+
+Developed and maintained by **DevMandate**.  
+Special thanks to all contributors, libraries, and tools that made this project possible.

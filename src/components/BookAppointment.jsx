@@ -1,11 +1,14 @@
 import { useState } from "react";
-import { FaChevronRight, FaUser, FaPhone, FaClock, FaCalendar, FaTools, FaCheck } from "react-icons/fa";
+import { FaChevronRight, FaUser, FaPhone, FaClock, FaCalendar, FaTools, FaCheck, FaEnvelope } from "react-icons/fa";
+import { sendBookingEmailToAdmin } from "../services/emailService";
 
 const BookAppointment = () => {
     const [activeStep, setActiveStep] = useState(0);
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
+        email: '',
         date: '',
         time: '',
         service: 'Sofa Cleaning'
@@ -40,6 +43,29 @@ const BookAppointment = () => {
 
     const nextStep = () => setActiveStep(prev => prev + 1);
     const prevStep = () => setActiveStep(prev => prev - 1);
+
+    const handleSubmit = async () => {
+        if (loading) return;
+      
+        setLoading(true);
+      
+        try {
+          await sendBookingEmailToAdmin(formData);
+      
+          alert(
+            "Your booking request has been received. Our team will contact you shortly to confirm."
+          );
+        } catch (error) {
+          console.error(error);
+          alert(
+            "Unable to submit your booking at the moment. Please try again later."
+          );
+        } finally {
+          setLoading(false);
+        }
+      };
+      
+      
  
 
     return (
@@ -98,6 +124,7 @@ const BookAppointment = () => {
                                         value={formData.name}
                                         onChange={handleInputChange}
                                         className="w-full p-4 pl-12 border-2 border-gray-200 rounded-xl focus:border-sky-500 focus:ring-2 outline-none transition"
+                                        placeholder="Enter your full name"
                                         required
                                     />
                                     <FaUser className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />                  
@@ -109,10 +136,23 @@ const BookAppointment = () => {
                                         value={formData.phone}
                                         onChange={handleInputChange}
                                         className="w-full p-4 pl-12 border-2 border-gray-200 rounded-xl focus:border-sky-500 focus:ring-2 outline-none transition"
+                                        placeholder="Enter your phone number"
                                         required
                                     />
                                     <FaPhone className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />                  
                                 </div>
+                                <div className="relative">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleInputChange}
+                                        className="w-full p-4 pl-12 border-2 border-gray-200 rounded-xl focus:border-sky-500 focus:ring-2 outline-none transition"
+                                        placeholder="Enter your email address"
+                                        required
+                                    />
+                                    <FaEnvelope className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />                  
+                                </div>                            
                             </div>
                         </div>
                     )}
@@ -195,9 +235,26 @@ const BookAppointment = () => {
                                     <span className="font-medium">{formData.service}</span>
                                 </div>
                             </div>
-                            <button className="w-full max-w-xs py-4 bg-gradient-to-r from-sky-500 to-sky-500 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                                Confirm & Book Appointment
-                            </button>
+                            <button
+                                onClick={handleSubmit}
+                                disabled={loading}
+                                className={`w-full max-w-xs py-4 rounded-xl font-bold text-white
+                                    transition-all transform
+                                    ${
+                                    loading
+                                        ? "bg-sky-400 cursor-not-allowed"
+                                        : "bg-gradient-to-r from-sky-500 to-sky-600 hover:scale-105 hover:shadow-xl"
+                                    }`}
+                                >
+                                {loading ? (
+                                    <span className="flex items-center justify-center gap-3">
+                                    <span className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                                    Sending request...
+                                    </span>
+                                ) : (
+                                    "Confirm & Book Appointment"
+                                )}
+                                </button>
                         </div>
                     )}
                     <div className="px-8 pb-8 flex justify-between">
@@ -220,6 +277,6 @@ const BookAppointment = () => {
             </div>            
         </div>
   )
-}
+};
 
 export default BookAppointment
