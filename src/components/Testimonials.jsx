@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { FaChevronLeft, FaQuoteLeft, FaStar, FaChevronRight } from 'react-icons/fa6';
+import maze from '../assets/maze.jpeg';
+import kim from '../assets/kim.jpeg';
+import max from '../assets/max.jpeg';
+import empress from '../assets/empress.jpeg';
 
 const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,28 +13,28 @@ const Testimonials = () => {
             name: 'Ephantus Kung`u',
             feedback: 'Great service! Highly recommend HomeGlow for all your home maintenance needs.',
             rating: 5,
-            image: 'https://randomuser.me/api/portraits/men/1.jpg',
+            image: maze,
         },
         {
             id: 2,
-            name: 'Jane Mwende',
+            name: 'Boniface Kimani',
             feedback: 'Professional and reliable. My go-to for any home repairs.',
             rating: 4,
-            image: 'https://randomuser.me/api/portraits/women/2.jpg',
+            image: kim,
         },
         {
             id: 3,
-            name: 'Melissa Johnson',
+            name: 'Maxwell Njeru',
             feedback: 'Affordable prices and excellent customer service.',
             rating: 5,
-            image: 'https://randomuser.me/api/portraits/men/3.jpg',
+            image: max,
         },
         {            
             id: 4,
-            name: 'Maxwell Njeru',
+            name: 'Jacinta Wangari',
             feedback: 'Quick response time and quality work. Very satisfied!',
             rating: 4,
-            image: 'https://randomuser.me/api/portraits/women/4.jpg',
+            image: empress,
         },
     ];
     const nextTestimonial = () => {

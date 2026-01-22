@@ -13,33 +13,33 @@ const Tips = () => {
 
   const tips = [
     {
-      title: "Dust Surfaces Regularly",
+      title: "Dust Smart, Not Just Often",
       content:
-        "Regular dusting prevents buildup on furniture and surfaces, keeping your home fresh and improving indoor air quality.",
+        "Focus on high-touch and hidden areas like ceiling fans, light switches, and baseboards. Using microfiber cloths traps dust effectively, reducing allergens and keeping your home healthier for everyone.",
       icon: <FaBroom className="w-10 h-10 text-sky-600" />
     },
     {
-      title: "Vacuum Carpets & Sofas Often",
+      title: "Vacuum Like a Pro",
       content:
-        "Frequent vacuuming helps remove dirt, pet hair, and allergens from carpets and upholstered furniture.",
+        "Target carpet edges, under furniture, and sofa crevices with a vacuum that has HEPA filtration. This not only removes dust, dirt, and pet hair but also reduces allergens and keeps fabrics looking fresh longer.",
       icon: <FaPumpSoap className="w-10 h-10 text-sky-600" />
     },
     {
-      title: "Choose Safe Cleaning Products",
+      title: "Choose Cleaning Products Wisely",
       content:
-        "Using gentle or eco-friendly cleaners protects your family, pets, and surfaces from harsh chemical damage.",
+        "Opt for eco-friendly or plant-based cleaners, and always read labels for harmful chemicals. Safe products protect your family and pets while extending the life of furniture and surfaces—plus, they often smell better too!",
       icon: <FaLeaf className="w-10 h-10 text-green-600" />
     },
     {
-      title: "Declutter Before Cleaning",
+      title: "Declutter Smartly Before Cleaning",
       content:
-        "Removing unnecessary items makes cleaning faster and more effective, especially during deep cleaning sessions.",
+        "Clear countertops, floors, and common surfaces before you start. Sort items into keep, donate, or toss piles—this not only speeds up cleaning but also gives your home a more organized, stress-free vibe.",
       icon: <FaBoxesStacked className="w-10 h-10 text-amber-600" />
     },
     {
-      title: "Disinfect High-Touch Areas",
+      title: "Disinfect High-Touch Spots Effectively",
       content:
-        "Frequently clean door handles, switches, and remote controls to reduce germs and maintain a hygienic home.",
+        "Focus on door handles, light switches, remotes, and faucet handles daily. Use a safe disinfectant or alcohol wipes to reduce germs and prevent the spread of illness, keeping your home truly hygienic.",
       icon: <FaHandSparkles className="w-10 h-10 text-purple-600" />
     }
   ];
