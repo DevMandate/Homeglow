@@ -212,7 +212,7 @@ const BookAppointment = () => {
                             <div className="inline-flex items-center justify-center bg-sky-100 p-6 rounded-full mb-6">
                                 <FaCheck className="text-4xl text-sky-500"/>
                             </div>
-                            <h2 className="text-2xl font-bold text-gray-800 mb-4">Confirm Your Appointment</h2>
+                            <h2 className="text-2xl font-bold text-gray-800 mb-4">Confirm Your Booking</h2>
                             <div className="bg-sky-50 rounded-xl p-6 mb-8 text-left max-w-md mx-auto">
                                 <div className="flex justify-between py-2 border-b border-sky-100">
                                     <span className="text-gray-600">Name:</span>
@@ -252,7 +252,7 @@ const BookAppointment = () => {
                                     Sending request...
                                     </span>
                                 ) : (
-                                    "Confirm & Book Appointment"
+                                    "Confirm & Book Booking"
                                 )}
                                 </button>
                         </div>
