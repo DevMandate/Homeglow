@@ -252,7 +252,7 @@ const BookAppointment = () => {
                                     Sending request...
                                     </span>
                                 ) : (
-                                    "Confirm & Book Booking"
+                                    "Confirm & Book"
                                 )}
                                 </button>
                         </div>
