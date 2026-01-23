@@ -41,11 +41,46 @@ const BookAppointment = () => {
         }));
     };
 
-    const nextStep = () => setActiveStep(prev => prev + 1);
+    const isStep1Valid = () => {
+        return formData.name.trim() !== "" && formData.phone.trim() !== "";
+      };
+      
+      const isStep2Valid = () => {
+        return (
+          formData.date.trim() !== "" &&
+          formData.time.trim() !== "" &&
+          formData.service.trim() !== ""
+        );
+      };
+      
+      const isFormValid = () => {
+        return isStep1Valid() && isStep2Valid();
+      };
+      
+
+      const nextStep = () => {
+        if (activeStep === 1 && !isStep1Valid()) {
+          alert("Please fill in your name and phone number.");
+          return;
+        }
+      
+        if (activeStep === 2 && !isStep2Valid()) {
+          alert("Please select date, time, and service.");
+          return;
+        }
+      
+        setActiveStep(prev => prev + 1);
+      };
+      
     const prevStep = () => setActiveStep(prev => prev - 1);
 
     const handleSubmit = async () => {
         if (loading) return;
+      
+        if (!isFormValid()) {
+          alert("Please complete all required details before submitting.");
+          return;
+        }
       
         setLoading(true);
       
@@ -64,6 +99,7 @@ const BookAppointment = () => {
           setLoading(false);
         }
       };
+      
       
       
  
@@ -153,7 +189,6 @@ const BookAppointment = () => {
                                         onChange={handleInputChange}
                                         className="w-full p-4 pl-12 border-2 border-gray-200 rounded-xl focus:border-sky-500 focus:ring-2 outline-none transition"
                                         placeholder="Enter your email address"
-                                        required
                                     />
                                     <FaEnvelope className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />                  
                                 </div>                            
