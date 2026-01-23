@@ -45,10 +45,10 @@ const Tips = () => {
   ];
 
   return (
-    <section id="tips" className="scroll-mt-20 max-w-6xl mx-auto px-4 py-12">
+    <section id="tips" className="scroll-mt-20 max-w-6xl mx-auto px-4 py-15">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">Home Cleaning Tips</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Discover simple and effective ways to keep your home clean and organized with these essential tips.</p>
+            <p className="text-sm lg:text-lg text-gray-600 max-w-2xl mx-auto">Discover simple and effective ways to keep your home clean and organized with these essential tips.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
             {tips.map ((tip, index) => (
@@ -64,7 +64,7 @@ const Tips = () => {
                     <div className="mb-2">
                         {tip.icon}
                     </div>
-                    <h3 className="font-medium text-gray-800 text-sm md:text-base">{tip.title}</h3>                    
+                    <h3 className="font-medium text-gray-800 text-sm lg:text-lg md:text-base">{tip.title}</h3>                    
                 </button>
             ))}
         </div>
@@ -74,8 +74,8 @@ const Tips = () => {
                     {tips[activeTip].icon}
                 </div>
                 <div>
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3">{tips[activeTip].title}</h3>
-                    <p className="text-gray-600 text-lg leading-relaxed">{tips[activeTip].content}</p>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">{tips[activeTip].title}</h3>
+                    <p className="text-gray-600 text-sm lg:text-lg leading-relaxed">{tips[activeTip].content}</p>
                 </div>
             </div>
         </div>

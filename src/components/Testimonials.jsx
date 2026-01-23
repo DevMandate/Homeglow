@@ -58,8 +58,8 @@ const Testimonials = () => {
 
         <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='text-center mb-16'>
-                <h2 className='text-3xl font-extrabold text-sky-800 sm:text-4xl'>What Our Customers Say</h2>
-                <p className='mt-4 text-xl text-gray-600'>Hear from our satisfied clients</p>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-sky-800'>What Our Customers Say</h2>
+                <p className='mt-3 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600'>Hear from our satisfied clients</p>
             </div>
             <div className='relative'>
                 <div className='flex transition-transform duration-500 ease-in-out'
@@ -75,15 +75,16 @@ const Testimonials = () => {
                                 />
                             </div>
                             <div className='md:w-2/3 md:pl-6'>
-                                <div className='relative'>
-                                <FaQuoteLeft 
-                                    className='text-sky-300 text-2xl sm:text-3xl absolute -top-3 sm:-top-2 -left-3 sm:-left-10'
-                                    />
+                            <div className="relative">
+  <FaQuoteLeft
+    className="text-sky-300 text-xl sm:text-2xl md:text-3xl absolute -top-2 sm:-top-3 md:-top-4 -left-2 sm:-left-4 md:-left-6"
+  />
 
-                                    <p className='text-base sm:text-lg text-gray-700 mb-6 relative z-10 leading-relaxed'>
-                                        {testimonial.feedback}
-                                    </p>
-                                </div>
+  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-6 relative z-10 leading-relaxed md:leading-loose">
+    {testimonial.feedback}
+  </p>
+</div>
+
                                 <div className='flex items-center justify-between'>
                                     <div>
                                         <h3 className='text-lg sm:text-xl font-bold text-sky-800'>

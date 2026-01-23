@@ -71,10 +71,14 @@ const BookAppointment = () => {
     return (
         <div id="book" className="scroll-mt-20 min-h-screen bg-gradient-to-br from-sky-50 to-sky-50 py-12 px-4">
             <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-sky-800 mb-3">Book Your Service</h1>
-                    <p className="text-lg text-sky-600">Fill out the form below to schedule your preferred service</p>
-                </div>
+                <div className="text-center mb-12 px-4 sm:px-6 lg:px-0">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-sky-800 mb-3">
+                        Book Your Service
+                    </h1>
+                    <p className="text-sm sm:text-base lg:text-lg text-sky-600">
+                        Fill out the form below to schedule your preferred service
+                    </p>
+            </div>
                 <div className="mb-12">
                     <div className="relative">
                         <div className="absolute top-1/2 left-0 right-0 h-2 bg-gray-100 rounded-full z-0"></div>
@@ -113,7 +117,7 @@ const BookAppointment = () => {
                 <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
                     {activeStep === 1 && (
                         <div className="p-8">
-                            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
                                 <FaUser className="mr-3 text-sky-500" />Personal Information
                             </h2>
                             <div className="space-y-6">
@@ -158,7 +162,7 @@ const BookAppointment = () => {
                     )}
                     {activeStep === 2 && (
                         <div className="p-8">
-                            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
                                 <FaCalendar className="mr-3 text-sky-500" />Service Details
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -210,7 +214,7 @@ const BookAppointment = () => {
                     {activeStep === 3 && (
                         <div className="p-8 text-center">
                             <div className="inline-flex items-center justify-center bg-sky-100 p-6 rounded-full mb-6">
-                                <FaCheck className="text-4xl text-sky-500"/>
+                                <FaCheck className="text-3xl sm:text-xl text-sky-500"/>
                             </div>
                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Confirm Your Booking</h2>
                             <div className="bg-sky-50 rounded-xl p-6 mb-8 text-left max-w-md mx-auto">

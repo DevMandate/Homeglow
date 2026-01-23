@@ -89,24 +89,25 @@ const Footer = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-sky-300 transition-colors">
-                    <h3 className="text-xl font-semibold mb-5 flex">
-                        Cleaning Tips & Tricks
-                    </h3>
-                    <p className="text-white/70 mb-5">
-                        Subscribe to our newsletter for the latest cleaning tips, tricks, and special offers directly to your inbox.
-                    </p>
-                    <div className="flex">
-                        <input 
-                        type="email" 
-                        placeholder="Your email address"
-                        className="bg-white/10 border border-white/20 rounded-r-none  rounded-l-lg px-5 py-3 w-full focus:outline-none focus:ring-2 focus:ring-sky-300 placeholder:text-white/50"
-                        />
-                        <button className="bg-sky-500 hover:bg-sky-400 text-blue-900 font-medium px-5 py-3 rounded-l-none rounded-r-lg transition-colors flex items-center">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
+                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-sky-300 transition-colors max-w-md mx-auto">
+    <h3 className="text-xl font-semibold mb-5 flex">
+        Cleaning Tips & Tricks
+    </h3>
+    <p className="text-white/70 mb-5">
+        Subscribe to our newsletter for the latest cleaning tips, tricks, and special offers directly to your inbox.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-3">
+        <input 
+            type="email" 
+            placeholder="Your email address"
+            className="bg-white/10 border border-white/20 rounded-lg sm:rounded-r-none px-5 py-3 w-full focus:outline-none focus:ring-2 focus:ring-sky-300 placeholder:text-white/50"
+        />
+        <button className="bg-sky-500 hover:bg-sky-400 text-blue-900 font-medium px-5 py-3 rounded-lg sm:rounded-l-none transition-colors flex items-center justify-center">
+            Subscribe
+        </button>
+    </div>
+</div>
+
             </div>
             <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p className="text-white/50 text-sm mb-3 md:mb-0">
