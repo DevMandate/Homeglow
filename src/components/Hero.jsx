@@ -10,12 +10,12 @@ const Hero = () => {
                 Bringing the Glow Back Home with Expert Cleaning Services
                 </h1>
                 <p className='text-gray-700 text-sm lg:text-lg'>
-                Experience a spotless home with HomeGlow's professional cleaning services. Our expert team is dedicated to delivering exceptional results, ensuring your living space is fresh, clean, and inviting. Book your appointment today and let us bring the glow back to your home!
+                Experience a spotless home with HomeGlow's professional cleaning services. Our expert team is dedicated to delivering exceptional results, ensuring your living space is fresh, clean, and inviting. Book your service today and let us bring the glow back to your home!
                 </p>
                 <a href="#book" className="inline-flex items-center bg-sky-600 text-white px-3 py-1 sm:px-6 sm:py-3 rounded-xl hover:bg-sky-700 transition text-base font-medium">
 
                     <CalendarCheck className="w-5 h-5 mr-2" />
-                    Book Appointment
+                    Book Service
                 </a>
             </div>
 

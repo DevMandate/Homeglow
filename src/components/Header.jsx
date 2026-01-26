@@ -6,7 +6,7 @@ const navList = [
   { href: '#services', label: 'Services' },
   { href: '#about', label: 'About' },
   { href: '#tips', label: 'Tips' },
-  { href: '#book', label: 'Book Appointment' },
+  { href: '#book', label: 'Book Service' },
   { href: '#testimonials', label: 'Testimonials' },
 ]
 
@@ -45,7 +45,7 @@ const Header = () => {
             href="#book"
             className="bg-sky-600 text-white px-4 py-2 rounded-xl hover:bg-sky-700 transition text-sm"
           >
-            Book Appointment
+            Book Service
           </a>
         </div>
 
