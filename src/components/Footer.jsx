@@ -119,7 +119,7 @@ import {
               </ul>
             </div>
   
-            {/* Newsletter */}
+            {/* Newsletter Under Dvlpt*/}
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-sky-300 transition-colors max-w-md mx-auto w-full">
               <NewsletterSubscribe
                 onSubmit={handleSubscribe}
