@@ -5,7 +5,9 @@ import {
     FaHouse,
     FaSprayCanSparkles,
     FaHelmetSafety,
-    FaBug
+    FaBug,
+    FaAirbnb,
+    FaShoePrints
   } from "react-icons/fa6";
 import { motion } from "framer-motion";
   
@@ -54,6 +56,18 @@ const services = [
       title: "Fumigation & Pest Control",
       description:
         "Safe and effective fumigation services to eliminate pests and protect your home from infestations."
+    },
+    {
+      icon: <FaAirbnb className="w-10 h-10 text-rose-500" />,
+      title: "Airbnb Cleaning",
+      description:
+        "Fast and reliable turnover cleaning for Airbnb and short-stay homes, ensuring spotless spaces and ready-to-guest standards."
+    },
+    {
+      icon: <FaShoePrints className="w-10 h-10 text-indigo-500" />,
+      title: "Professional Shoe Cleaning",
+      description:
+        "Expert shoe cleaning and care service that removes dirt, stains, and odors, restoring your footwear to a fresh, like-new condition."
     }
   ];
   
